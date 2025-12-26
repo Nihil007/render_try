@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
-const User = require('./models/User');
+const User = require('./models/user');
 
 const app = express();
 
@@ -46,6 +46,6 @@ app.post('/submit', async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT, '0.0.0.0', () => {
+app.listen(process.env.PORT||8080, '0.0.0.0', () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });
