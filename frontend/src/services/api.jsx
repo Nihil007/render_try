@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000'; 
+const BASE_URL = 'https://render-try-5zsx.onrender.com'; 
 // use local IP if testing on mobile
 
 export async function submitUser(data) {
